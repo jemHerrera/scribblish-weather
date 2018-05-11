@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Scribblish Weather</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section>
+                <div class="logo">
+                    <img class="down-size day index-1" id="day" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522949309/day-01-01.png">
+                    <img class="down-size l-clouds index-3" id="l-clouds" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522949312/light-clouds-01-01.png">
+                    <img class="down-size night index-1" id="night" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950017/night-01-01.png">
+                    <img class="down-size d-clouds index-3" id="d-clouds" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950016/dark-clouds-01-01.png">
+                    <img class="down-size stars index-2" id="stars" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950016/stars-01-01.png">
+                    <img class="down-size overcast index-2" id="overcast" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950016/overcast-01-01.png">
+                    <img class="down-size rain index-5" id="rain" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522951374/rain-01-01-01.png">
+                    <img class="down-size fog index-5" id="fog" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950019/fog-01-01.png">
+                    <img class="down-size snow index-3" id="snow" src="https://res.cloudinary.com/mrscribbles/image/upload/v1522950019/snow-01-01.png">
+                    <img class="down-size summer-day index-4" id="summer-day" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227575/summer-day-01-01-01.png">
+                    <img class="down-size spring-day index-4" id="spring-day" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/spring-day-01-01-01.png">
+                    <img class="down-size fall-day-wind index-4" id="fall-day-wind"  src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/fall-day-wind-01-01-01.png">
+                    <img class="down-size fall-day-no-wind index-4" id="fall-day-no-wind" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/fall-day-no-wind-01-01-01.png">
+                    <img class="down-size winter index-4" id="winter" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227575/winter-01-01-01.png">
+                    <img class="down-size summer-night index-4" id="summer-night" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227575/summer-night-01-01-01.png">
+                    <img class="down-size spring-night index-4" id="spring-night" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/spring-night-01-01-01.png">
+                    <img class="down-size fall-night-no-wind index-4" id="fall-night-no-wind" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/fall-night-no-wind-01-01-01.png">
+                    <img class="down-size fall-night-wind index-4" id="fall-night-wind" src="https://res.cloudinary.com/mrscribbles/image/upload/v1523227574/fall_night_wind-01-01-01.png">
+                </div>
+                <div class="info">
+                    <h1><span id="temp"></span><span id="deg" class="deg">&deg;C</span></h1>
+                    <h2 id="area"></h2>
+                    <div class="temp" id="converter">
+                    <a class="c" id="c" href="#">&deg;C</a>
+                    <a class="f" id="f" href="#">&deg;F</a>
+                    </div>
+                </div>
+        </section>
+    </body>
+</html>

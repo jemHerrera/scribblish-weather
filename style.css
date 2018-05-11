@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  body{
+    background-color: #1e1e1e;
+    font-size: 17px;
+    color: #f0f0f0;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+  }
+
+  .red-border{border: 1px solid pink;}
+
+  section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo{
+    width: 350px;
+    height: 350px;
+  }
+
+  .down-size{
+    width: inherit;
+    position: absolute;
+    display: none;
+  }
+
+  .index-1{z-index: 1;}
+  .index-2{z-index: 2;}
+  .index-3{z-index: 3;}
+  .index-4{z-index: 4;}
+  .index-5{z-index: 5;}
+
+  .info{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 2%;
+  }
+
+  h1{
+    font-weight: 100;
+    font-size: 650%;
+  }
+
+  .deg{
+    font-size: 60%;
+    opacity: 0;
+  }
+
+  h2{
+    font-size: 80%;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .temp{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4%;
+    width: 100%;
+    opacity: 0;
+  }
+
+  a{
+    color: #909090;
+    font-size: 60%;
+    border: 1px solid #909090;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: center;
+    width: 10%;
+    height: 10%;
+    align-self: flex-end;
+  }
+  .c{
+    border-radius: 5% 0 0 5%;
+    color: inherit;
+    border-color: #f0f0f0;
+  }
+  .f{border-radius: 0 5% 5% 0;}
+
+  @media screen and (max-width: 1024px){
+    .logo{
+      width: 300px;
+      height: 300px;
+    }
+
+    .info{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    body{font-size: 14px;}
+
+    .logo{
+      width: 250px;
+      height: 250px;
+    }
+
+    .info{
+      width: 200px;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 480px){
+    body{font-size: 12px;}
+
+    section{
+      flex-direction:column-reverse;
+    }
+
+    .logo{
+      width: 200px;
+      height: 200px;
+    }
+
+    .info{
+      width: 150px;
+      height: 150px;
+      margin: 0 0 4% 0;
+    }
+  }
